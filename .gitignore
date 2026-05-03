@@ -1,0 +1,17 @@
+.next/
+node_modules/
+dist/
+test-results/
+coverage/
+dev.log
+dev.err.log
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env*.local
+.vercel/
+/Assets/
+public/assets/advisory-detail.jpeg
+public/assets/finance-room.jpeg
+public/assets/market-motion.jpeg
+public/assets/mauritius-blank-map.svg
