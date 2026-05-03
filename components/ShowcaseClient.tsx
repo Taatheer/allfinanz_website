@@ -96,7 +96,7 @@ export default function ShowcaseClient() {
         if (heroWordRef.current) {
           gsap.fromTo(
             heroWordRef.current,
-            { letterSpacing: "-0.02em", scale: 1, opacity: 1 },
+            { letterSpacing: "0", scale: 1, opacity: 1 },
             {
               letterSpacing: "0.04em",
               scale: 0.94,
