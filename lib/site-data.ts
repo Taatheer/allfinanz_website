@@ -11,7 +11,7 @@ export const phoneNumber = "+230 2105209";
 
 export const company = {
   name: "AllFinanz Consulting Ltd",
-  strapline: "Chartered accountants, tax, and advisory",
+  strapline: "Professional accountant, tax, and advisory",
   location: "Mauritius",
   phone: phoneNumber
 };
@@ -79,10 +79,10 @@ export const storySections = [
   {
     id: "story-1",
     kicker: "01",
-    theme: "Chartered accountant insight",
+    theme: "Professional accountant insight",
     title: "A cleaner financial core",
     body:
-      "Chartered accountant-led management accounts and reporting rhythms turn scattered records into decisions leadership can trust.",
+      "Professional accountant-led management accounts and reporting rhythms turn scattered records into decisions leadership can trust.",
     metric: "98%",
     metricLabel: "reporting clarity",
     proof: "Ledgers, reconciliations, and management views brought into one readable operating picture.",
@@ -137,7 +137,7 @@ export const capabilityCards = [
   },
   {
     title: "Accounting and reporting",
-    copy: "Chartered accountant support for financial records, management reporting, and practical interpretation.",
+    copy: "Professional accountant support for financial records, management reporting, and practical interpretation.",
     icon: ReceiptText
   }
 ];

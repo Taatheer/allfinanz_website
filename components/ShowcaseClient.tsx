@@ -409,7 +409,7 @@ export default function ShowcaseClient() {
           <div className="relative z-[3] mx-auto grid w-full max-w-[1400px] flex-1 items-end gap-14 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div className="hero-copy">
               <div ref={heroEyebrowRef} className="flex items-center gap-3">
-                <span className="hero-kicker">{company.location} · chartered accountant advisory desk</span>
+                <span className="hero-kicker">{company.location} · professional accountant advisory desk</span>
               </div>
 
               <SplitText
@@ -841,7 +841,7 @@ export default function ShowcaseClient() {
               />
             </span>
             <p className="mt-6 max-w-md text-sm font-medium leading-6 text-paper/78">
-              Chartered accountant, tax, planning, corporate finance, and corporate advisory support for clearer decisions. Mauritius desk, modern operating layer.
+              Professional accountant, tax, planning, corporate finance, and corporate advisory support for clearer decisions. Mauritius desk, modern operating layer.
             </p>
             <p className="mt-6 font-mono text-[0.62rem] font-bold uppercase tracking-[0.22em] text-paper/45">
               © {new Date().getFullYear()} {company.name} · All rights reserved

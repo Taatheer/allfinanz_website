@@ -30,7 +30,7 @@ const professionalServiceSchema = {
   url: siteUrl,
   telephone: "+230 2105209",
   description:
-    "Chartered accountant-led accounting, tax, corporate finance, controls, and advisory support in Mauritius.",
+    "Professional accountant-led accounting, tax, corporate finance, controls, and advisory support in Mauritius.",
   areaServed: {
     "@type": "Country",
     name: "Mauritius"
@@ -40,7 +40,7 @@ const professionalServiceSchema = {
     addressCountry: "MU"
   },
   serviceType: [
-    "Chartered accountant services",
+    "Professional accountant services",
     "Accounting and reporting",
     "Tax planning",
     "Corporate finance",
@@ -50,16 +50,16 @@ const professionalServiceSchema = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "AllFinanz Consulting Ltd | Chartered Accountants in Mauritius",
+  title: "AllFinanz Consulting Ltd | Professional Accountant in Mauritius",
   description:
-    "Chartered accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+    "Professional accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "AllFinanz Consulting Ltd | Chartered Accountants in Mauritius",
+    title: "AllFinanz Consulting Ltd | Professional Accountant in Mauritius",
     description:
-      "Chartered accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+      "Professional accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
     url: siteUrl,
     siteName: "AllFinanz Consulting Ltd",
     locale: "en_MU",
