@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import { Archivo, Manrope, JetBrains_Mono } from "next/font/google";
+import { Archivo, JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -21,10 +21,50 @@ const jetBrains = JetBrains_Mono({
   weight: ["400", "500", "700"]
 });
 
-export const metadata: Metadata = {
-  title: "AllFinanz Consulting Ltd · Financial intelligence in Mauritius",
+const siteUrl = "https://allfinanz.mu";
+
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "AllFinanz Consulting Ltd",
+  url: siteUrl,
+  telephone: "+230 2105209",
   description:
-    "Premium accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+    "Chartered accountant-led accounting, tax, corporate finance, controls, and advisory support in Mauritius.",
+  areaServed: {
+    "@type": "Country",
+    name: "Mauritius"
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "MU"
+  },
+  serviceType: [
+    "Chartered accountant services",
+    "Accounting and reporting",
+    "Tax planning",
+    "Corporate finance",
+    "Corporate advisory"
+  ]
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: "AllFinanz Consulting Ltd | Chartered Accountants in Mauritius",
+  description:
+    "Chartered accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    title: "AllFinanz Consulting Ltd | Chartered Accountants in Mauritius",
+    description:
+      "Chartered accountant-led accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+    url: siteUrl,
+    siteName: "AllFinanz Consulting Ltd",
+    locale: "en_MU",
+    type: "website"
+  },
   verification: {
     google: "google92545847441ab4ec.html"
   },
@@ -34,9 +74,7 @@ export const metadata: Metadata = {
       { url: "/assets/favicon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/assets/favicon-512.png", sizes: "512x512", type: "image/png" }
     ],
-    apple: [
-      { url: "/assets/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
-    ]
+    apple: [{ url: "/assets/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
   }
 };
 
@@ -55,6 +93,12 @@ export default function RootLayout({
     <html lang="en" className={`${archivo.variable} ${manrope.variable} ${jetBrains.variable}`}>
       <body>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(professionalServiceSchema)
+          }}
+        />
         <Analytics />
       </body>
     </html>
