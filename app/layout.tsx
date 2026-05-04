@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: "AllFinanz Consulting Ltd · Financial intelligence in Mauritius",
   description:
     "Premium accounting, tax, corporate finance, controls, and strategy support for ambitious leadership in Mauritius.",
+  verification: {
+    google: "google92545847441ab4ec.html"
+  },
   icons: {
     icon: [
       { url: "/assets/favicon-32.png", sizes: "32x32", type: "image/png" },
